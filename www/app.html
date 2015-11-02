@@ -1,0 +1,15 @@
+<template>
+
+	<table>
+		<tr>
+			<th>Title</th>
+			<th>Year</th>
+		</tr>
+		<tr repeat.for="movie of movies">
+			<td>${movie.title}</td>
+			<td>${movie.releaseYear}</td>
+		</tr>
+	</table>
+	
+	<compose view-model="currentDate"> </compose>
+</template>
